@@ -1,0 +1,27 @@
+
+  <div class="card my-1">
+    <div class="card-body">
+        <h3>Somme des valeurs par source de données</h3>
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Pays</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let total of  mappPaysRefValue | keyvalue">
+            <td>{{total.key}}</td> 
+            <td>{{total.value}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+ 
+
+ 
+
